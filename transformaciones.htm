@@ -1,11 +1,41 @@
 <HTML>
-    <h1>Tranformacion de traslacion</h1>
+    <h1>Tranformaciones</h1>
     <p>VECTOR ORIGINAL</p>
-    <p>Coordenada Inicial <input id = "c_i" size = 8></p> <!--size es tamaño de letro y <p> es parrafo -->
-    <p>Coordenada Final <input id = "c_f" size = 8></p>
-    <p>VECTOR TRASLACION</p>
-    <p>Coordenada Traslacion <input id = "c_t" size = 8></p>
-    <script>
+    <p>Coordenadas (separelas por una coma)<input id = "c_i" size = 8></p> <!--size es tamaño de letro y <p> es parrafo -->
+        <button onclick="toNum()">comprobar</button>
+    <br/>
+    <br/>
+    <p>TRASLACION</p>
+    <p>Cambio en x <input id = "x_1" size = 8></p>
+    <p>Cambio en y <input id = "y_1" size = 8></p>
+    <button onclick="trasladar()">Trasladar</button>
+    <br/>
+    <br/>
+    <br/>
 
-    </script>
+    <p>ESCALAR</p>
+    <p>Cambio en x <input id = "x_2" size = 8></p>
+    <p>Cambio en y <input id = "y_2" size = 8></p>
+    <button onclick="escalar()">Escalar</button>
+
+    <SCRIPT>
+        function toNum(){
+            coordenadas = document.getElementById('c_i').value
+            const myArray = coordenadas.split(",");
+            c1 = Math.floor(document.getElementById("c_i").innerHTML = myArray[0]);
+            c2 = Math.floor(document.getElementById("c_i").innerHTML = myArray[1]);
+
+            x1 = Math.floor(document.getElementById("x_1").value)
+            y1 = Math.floor(document.getElementById("y_1").value)
+
+            x2 = Math.floor(document.getElementById("c_i").value)
+            y2 = Math.floor(document.getElementById("c_i").value)
+  
+        }
+
+        function trasladar(x,y){
+           h = document.getElement
+           alert(h)
+        }
+    </SCRIPT>
 </HTML>
